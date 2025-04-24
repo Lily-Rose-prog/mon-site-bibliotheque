@@ -3,255 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Bibliothèque en Ligne</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <title>Ma Bibliothèque</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#mm-library">M/M</a></li>
-            <li><a href="#dark-romance-library">Dark Romance</a></li>
-            <li><a href="#romantasy-library">Romantasy</a></li>
-        </ul>
-    </nav>
-
-    <!-- Bibliothèque M/M -->
-    <div class="library" id="mm-library">
-        <h2>Bibliothèque M/M</h2>
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/4196V3ZV6UL._SX195_.jpg" alt="Black Blossom - Loved You First">
-            <p class="title">Black Blossom - Loved You First</p>
-            <p class="author">Aimée Lou</p>
-        </div>
-        <!-- Ajoute d'autres livres M/M ici -->
-    </div>
-
-    <!-- Bibliothèque Dark Romance -->
-    <div class="library" id="dark-romance-library">
-        <h2>Bibliothèque Dark Romance</h2>
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/71d8JE4GROL._AC_UF1000,1000_QL80_.jpg" alt="Hors Piste">
-            <p class="title">Hors Piste</p>
-            <p class="author">Aimée Lou</p>
-        </div>
-        <!-- Ajoute d'autres livres Dark Romance ici -->
-    </div>
-
-    <!-- Bibliothèque Romantasy -->
-    <div class="library" id="romantasy-library">
-        <h2>Bibliothèque Romantasy</h2>
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/71ZHRsowsBL.jpg" alt="Faux Départ">
-            <p class="title">Faux Départ</p>
-            <p class="author">Aimée Lou</p>
-        </div>
-        <!-- Ajoute d'autres livres Romantasy ici -->
-    </div>
+    <header>
+        <h1>Bienvenue dans ma bibliothèque</h1>
+    </header>
+    <main class="homepage">
+        <a href="mm.html" class="genre-card">
+            <img src="chemin/vers/image_mm.jpg" alt="M/M">
+            <div class="overlay">M/M</div>
+        </a>
+        <a href="dark-romance.html" class="genre-card">
+            <img src="chemin/vers/image_dark_romance.jpg" alt="Dark Romance">
+            <div class="overlay">Dark Romance</div>
+        </a>
+        <a href="romantasy.html" class="genre-card">
+            <img src="chemin/vers/image_romantasy.jpg" alt="Romantasy">
+            <div class="overlay">Romantasy</div>
+        </a>
+    </main>
 </body>
 </html>
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f1e3;
+    background-color: #f5f1e3; /* Beige clair */
     color: #333;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    background-color: #5e3e33;
-    margin: 0;
+header {
     text-align: center;
+    padding: 20px;
+    background-color: #5e3e33; /* Marron foncé */
+    color: white;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+.homepage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
 }
 
-nav ul li a {
+.genre-card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border: 2px solid #5e3e33;
+    border-radius: 10px;
     text-decoration: none;
     color: white;
-    padding: 10px;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    background-color: #3e2722;
-}
-
-.library {
-    margin-bottom: 50px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-#mm-library {
-    background-color: #d3c8e1;
-}
-
-#dark-romance-library {
-    background-color: #2f2a3f;
-    color: #fff;
-}
-
-#romantasy-library {
-    background-color: #f5d6d6;
-}
-
-.book {
-    display: inline-block;
-    width: 150px;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #5e3e33;
-    border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
-.book:hover {
-    transform: scale(1.1);
+.genre-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.book img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-h2 {
+.genre-card .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(94, 62, 51, 0.7);
+    width: 100%;
     text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin-bottom: 20px;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+.genre-card:hover {
+    transform: scale(1.05);
+}
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliothèque de Lily-Rose</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f5f1e3; /* Beige clair */
-            margin: 0;
-            padding: 0;
-            color: #4e4b46; /* Gris foncé, pour un contraste doux */
-        }
-        h1 {
-            text-align: center;
-            margin-top: 30px;
-            color: #5e3e33; /* Marron doux */
-            font-size: 2.5em;
-        }
-        .book {
-            width: 220px;
-            text-align: center;
-            margin: 20px;
-            display: inline-block;
-            vertical-align: top;
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            background-color: #f4e1c1; /* Beige plus chaud */
-        }
-        .book:hover {
-            transform: scale(1.05);
-            background-color: #e0c092; /* Beige plus foncé */
-        }
-        .book img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border: 2px solid #f5f1e3; /* Bordure beige clair */
-        }
-        .book h2 {
-            font-size: 18px;
-            color: #5e3e33; /* Marron pour le titre */
-            margin-bottom: 5px;
-        }
-        .book p {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-        }
-        .books-container {
-            text-align: center;
-            margin-top: 30px;
-        }
-    </style>
+    <title>Genre M/M</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>𝙱𝚒𝚋𝚕𝚒𝚘𝚝𝚑𝚎̀𝚚𝚞𝚎</h1>
-    <div class="books-container">
-        <!-- Livre 1 -->
+    <header>
+        <h1>Livres M/M</h1>
+    </header>
+    <main class="library">
         <div class="book">
-            <img src="https://m.media-amazon.com/images/I/71ZHRsowsBL.jpg" alt="Faux Départ">
-            <h2>Faux Départ</h2>
-            <p>Aimée Lou</p>
+            <a href="details_livre1.html">
+                <img src="chemin/vers/couverture_livre1.jpg" alt="Titre Livre 1">
+                <p class="title">Titre Livre 1</p>
+                <p class="author">Auteur Livre 1</p>
+            </a>
         </div>
-
-        <!-- Livre 2 -->
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/71d8JE4GROL._AC_UF1000,1000_QL80_.jpg" alt="Hors Piste">
-            <h2>Hors Piste</h2>
-            <p>Aimée Lou</p>
-        </div>
-
-        <!-- Livre 3 -->
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/71hD3pnwvUL._UF1000,1000_QL80_.jpg" alt="Royal Bodyguard">
-            <h2>Royal Bodyguard</h2>
-            <p>Aimée Lou</p>
-        </div>
-
-        <!-- Livre 4 -->
-        <div class="book">
-            <img src="https://products-images.di-static.com/image/aimee-lou-esprit-d-equipe/9782371266575-475x500-1.jpg">
-            <h2>Esprit D'Équipe</h2>
-            <p>Aimée Lou</p>
-        </div>
-
-        <!-- Livre 5 -->
-        <div class="book">
-            <img src="https://cdn1.booknode.com/book_cover/5595/falling_into_pieces-5595160-264-432.jpg" alt="Falling Into Pieces">
-            <h2>Falling Into Pieces</h2>
-            <p>Sheily Larash</p>
-        </div>
-
-        <!-- Livre 6 -->
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/61U0-MAxakL.jpg" alt="Malgré les Épines">
-            <h2>Malgré les Épines</h2>
-            <p>J.L Corolle</p>
-        </div>
-
-        <!-- Livre 7 -->
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/71TqXe0no6L.jpg">
-            <h2>Black Blossom T.1 - Loved You First</h2>
-            <p>Aimée Lou</p>
-        </div>
-
-        <!-- Livre 8 -->
-        <div class="book">
-            <img src="https://cdn.cultura.com/cdn-cgi/image/width=250/media/pim/TITELIVE/70_9782371266025_1_75.jpg" alt="Black Blossom T.2 - Still The One">
-            <h2>Black Blossom T.2 - Still The One</h2>
-            <p>Aimée Lou</p>
-        </div>
-
-        <!-- Livre 9 -->
-        <div class="book">
-            <img src="https://m.media-amazon.com/images/I/7107WsdDYUL._AC_UF1000,1000_QL80_.jpg" alt="Sander - Les Dieux du Campus">
-            <h2>Sander - Les Dieux du Campus</h2>
-            <p>Phoenix B, Asher & F.V Estyer</p>
-        </div>
-    </div>
+        <!-- Ajoutez d'autres livres ici -->
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titre Livre 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Titre Livre 1</h1>
+    </header>
+    <main class="book-details">
+        <img src="chemin/vers/couverture_livre1.jpg" alt="Titre Livre 1">
+        <p><strong>Auteur :</strong> Auteur Livre 1</p>
+        <p><strong>Résumé :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        <!-- Ajoutez d'autres informations si nécessaire -->
+    </main>
 </body>
 </html>
