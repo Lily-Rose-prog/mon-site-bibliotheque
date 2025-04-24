@@ -11,7 +11,7 @@
             background-color: #f5f1e3; /* Beige clair */
             margin: 0;
             padding: 0;
-            color: #4e4b46; /* Gris foncé, pour un contraste doux */
+            color: #4e4b46; /* Gris foncé */
         }
         h1 {
             text-align: center;
@@ -19,53 +19,67 @@
             color: #5e3e33; /* Marron doux */
             font-size: 2.5em;
         }
-        .box {
-            width: 220px;
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #5e3e33;
+            margin: 0;
             text-align: center;
-            margin: 20px;
+        }
+        nav ul li {
             display: inline-block;
-            vertical-align: top;
-            background-color: #fff;
-            padding: 15px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            background-color: #f4e1c1; /* Beige plus chaud */
+            margin-right: 20px;
         }
-        .box:hover {
-            transform: scale(1.05);
-            background-color: #e0c092; /* Beige plus foncé */
-        }
-        .box img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border: 2px solid #f5f1e3; /* Bordure beige clair */
-        }
-        .box h2 {
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
             font-size: 18px;
-            color: #5e3e33; /* Marron pour le titre */
-            margin-bottom: 5px;
         }
-        .box p {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
+        nav ul li a:hover {
+            background-color: #3e2722; /* Légèrement plus foncé pour l'effet au survol */
         }
-        .boxs-container {
+        .library {
+            margin-bottom: 50px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* Bibliothèque M/M */
+        #mm-library {
+            background-color: #d3c8e1; /* Teinte douce pour M/M */
+        }
+        /* Bibliothèque Dark Romance */
+        #dark-romance-library {
+            background-color: #2f2a3f; /* Teinte sombre pour Dark Romance */
+            color: #fff; /* Texte clair */
+        }
+        /* Bibliothèque Romantasy */
+        #romantasy-library {
+            background-color: #f5d6d6; /* Teinte douce pour Romantasy */
+        }
+        .book {
+            display: inline-block;
+            width: 150px;
             text-align: center;
-            margin-top: 30px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #5e3e33; /* Bordure marron autour des livres */
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .book:hover {
+            transform: scale(1.1); /* Effet d'agrandissement au survol */
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin-bottom: 20px;
         }
     </style>
-</head>
-<body>
-   <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Bibliothèque en Ligne</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
 </head>
 <body>
     <nav>
