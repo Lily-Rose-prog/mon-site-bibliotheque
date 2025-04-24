@@ -3,125 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ma Bibliothèque</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bibliothèque de Lileve</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f1e3; /* Beige clair */
+            margin: 0;
+            padding: 0;
+            color: #4e4b46; /* Gris foncé, pour un contraste doux */
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #5e3e33; /* Marron doux */
+            font-size: 2.5em;
+        }
+        .box {
+            width: 220px;
+            text-align: center;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            background-color: #f4e1c1; /* Beige plus chaud */
+        }
+        .box:hover {
+            transform: scale(1.05);
+            background-color: #e0c092; /* Beige plus foncé */
+        }
+        .box img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 2px solid #f5f1e3; /* Bordure beige clair */
+        }
+        .box h2 {
+            font-size: 18px;
+            color: #5e3e33; /* Marron pour le titre */
+            margin-bottom: 5px;
+        }
+        .box p {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .boxs-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue dans ma bibliothèque</h1>
-    </header>
-    <main class="homepage">
-        <a href="mm.html" class="genre-card">
-            <img src="chemin/vers/image_mm.jpg" alt="M/M">
-            <div class="overlay">M/M</div>
-        </a>
-        <a href="dark-romance.html" class="genre-card">
-            <img src="chemin/vers/image_dark_romance.jpg" alt="Dark Romance">
-            <div class="overlay">Dark Romance</div>
-        </a>
-        <a href="romantasy.html" class="genre-card">
-            <img src="chemin/vers/image_romantasy.jpg" alt="Romantasy">
-            <div class="overlay">Romantasy</div>
-        </a>
-    </main>
-</body>
-</html>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f1e3; /* Beige clair */
-    color: #333;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #5e3e33; /* Marron foncé */
-    color: white;
-}
-
-.homepage {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 40px;
-    gap: 20px;
-}
-
-.genre-card {
-    position: relative;
-    width: 250px;
-    height: 350px;
-    overflow: hidden;
-    border: 2px solid #5e3e33;
-    border-radius: 10px;
-    text-decoration: none;
-    color: white;
-    transition: transform 0.3s ease;
-}
-
-.genre-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.genre-card .overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgba(94, 62, 51, 0.7);
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.genre-card:hover {
-    transform: scale(1.05);
-}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Genre M/M</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Livres M/M</h1>
-    </header>
-    <main class="library">
-        <div class="book">
-            <a href="details_livre1.html">
-                <img src="chemin/vers/couverture_livre1.jpg" alt="Titre Livre 1">
-                <p class="title">Titre Livre 1</p>
-                <p class="author">Auteur Livre 1</p>
-            </a>
+    <h1>𝙱𝚒𝚋𝚕𝚒𝚘𝚝𝚑𝚎̀𝚚𝚞𝚎</h1>
+    <div class="boxs-container">
+        <!-- Case 1 -->
+        <div class="box">
+            <img src="https://www.canva.com/design/DAGljIbmIEI/1_O2vbIWrl-2xORj1ykfKw/edit">
+            <h2>Romance MLM</h2>
         </div>
-        <!-- Ajoutez d'autres livres ici -->
-    </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titre Livre 1</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Titre Livre 1</h1>
-    </header>
-    <main class="book-details">
-        <img src="chemin/vers/couverture_livre1.jpg" alt="Titre Livre 1">
-        <p><strong>Auteur :</strong> Auteur Livre 1</p>
-        <p><strong>Résumé :</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-        <!-- Ajoutez d'autres informations si nécessaire -->
-    </main>
+
+        <!-- Case 2 -->
+        <div class="box">
+            <img src="https://www.canva.com/design/DAGljB8t-Es/530nE8_-tVL37jdojXlYTQ/edit">
+            <h2>Dark Romance</h2>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="box">
+            <img src="https://www.canva.com/design/DAGljJDDwF0/V_OjdP95wCM4bi7atomaiw/edit">
+            <h2>Romantasy</h2>
+        </div>
+    </div>
 </body>
 </html>
