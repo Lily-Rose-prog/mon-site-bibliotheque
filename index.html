@@ -11,46 +11,13 @@
             background-color: #f5f1e3; /* Beige clair */
             margin: 0;
             padding: 0;
-            color: #4e4b46; /* Gris foncé */
+            color: #4e4b46; /* Gris foncé, pour un contraste doux */
         }
         h1 {
             text-align: center;
             margin-top: 30px;
             color: #5e3e33; /* Marron doux */
             font-size: 2.5em;
-        }
-        .book-category {
-            display: inline-block;
-            width: 30%;
-            margin: 15px;
-            text-align: center;
-            background-color: #f4e1c1;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        .book-category:hover {
-            transform: scale(1.05);
-            background-color: #e0c092;
-        }
-        .book-category img {
-            width: 100%;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
-        .book-category h2 {
-            font-size: 18px;
-            color: #5e3e33;
-            margin-bottom: 5px;
-        }
-        .book-category p {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-        }
-        .books-container {
-            text-align: center;
-            margin-top: 30px;
         }
         .book {
             width: 220px;
@@ -63,21 +30,21 @@
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
-            background-color: #f4e1c1;
+            background-color: #f4e1c1; /* Beige plus chaud */
         }
         .book:hover {
             transform: scale(1.05);
-            background-color: #e0c092;
+            background-color: #e0c092; /* Beige plus foncé */
         }
         .book img {
             width: 100%;
             border-radius: 8px;
             margin-bottom: 10px;
-            border: 2px solid #f5f1e3;
+            border: 2px solid #f5f1e3; /* Bordure beige clair */
         }
         .book h2 {
             font-size: 18px;
-            color: #5e3e33;
+            color: #5e3e33; /* Marron pour le titre */
             margin-bottom: 5px;
         }
         .book p {
@@ -85,48 +52,77 @@
             color: #7f8c8d;
             margin-bottom: 15px;
         }
+        .books-container {
+            text-align: center;
+            margin-top: 30px;
+        }
     </style>
 </head>
 <body>
     <h1>𝙱𝚒𝚎𝚗𝚟𝚎𝚗𝚞𝚎 𝚍𝚊𝚗𝚜 𝚖𝚊 𝚋𝚒𝚋𝚕𝚒𝚘𝚝𝚑𝚎̀𝚚𝚞𝚎</h1>
-
-    <!-- Section Romance MLM -->
-    <div class="book-category">
-        <a href="#romance-mlm-books">
-            <div class="book-category-box">
-                <img src="https://example.com/romance-mlm-image.jpg" alt="Romance MLM">
-                <h2>Romance MLM</h2>
-                <p>Découvrez notre sélection de livres Romance MLM, une immersion dans des histoires passionnantes et émouvantes.</p>
-            </div>
-        </a>
-    </div>
-
-    <!-- Liste des livres Romance MLM -->
-    <div class="books-container" id="romance-mlm-books">
-        <h2>Romance MLM</h2>
-
+    <div class="books-container">
         <!-- Livre 1 -->
         <div class="book">
-            <img src="https://example.com/book1.jpg" alt="Titre du Livre 1">
-            <h2>Titre du Livre 1</h2>
-            <p>Auteur du Livre 1</p>
+            <img src="https://m.media-amazon.com/images/I/71ZHRsowsBL.jpg" alt="Faux Départ">
+            <h2>Faux Départ</h2>
+            <p>Aimée Lou</p>
         </div>
 
         <!-- Livre 2 -->
         <div class="book">
-            <img src="https://example.com/book2.jpg" alt="Titre du Livre 2">
-            <h2>Titre du Livre 2</h2>
-            <p>Auteur du Livre 2</p>
+            <img src="https://m.media-amazon.com/images/I/71d8JE4GROL._AC_UF1000,1000_QL80_.jpg" alt="Hors Piste">
+            <h2>Hors Piste</h2>
+            <p>Aimée Lou</p>
         </div>
 
         <!-- Livre 3 -->
         <div class="book">
-            <img src="https://example.com/book3.jpg" alt="Titre du Livre 3">
-            <h2>Titre du Livre 3</h2>
-            <p>Auteur du Livre 3</p>
+            <img src="https://m.media-amazon.com/images/I/71hD3pnwvUL._UF1000,1000_QL80_.jpg" alt="Royal Bodyguard">
+            <h2>Royal Bodyguard</h2>
+            <p>Aimée Lou</p>
         </div>
 
-        <!-- Ajoute d'autres livres ici -->
+        <!-- Livre 4 -->
+        <div class="book">
+            <img src="https://products-images.di-static.com/image/aimee-lou-esprit-d-equipe/9782371266575-475x500-1.jpg">
+            <h2>Esprit D'Équipe</h2>
+            <p>Aimée Lou</p>
+        </div>
+
+        <!-- Livre 5 -->
+        <div class="book">
+            <img src="https://cdn1.booknode.com/book_cover/5595/falling_into_pieces-5595160-264-432.jpg" alt="Falling Into Pieces">
+            <h2>Falling Into Pieces</h2>
+            <p>Sheily Larash</p>
+        </div>
+
+        <!-- Livre 6 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/61U0-MAxakL.jpg" alt="Malgré les Épines">
+            <h2>Malgré les Épines</h2>
+            <p>J.L Corolle</p>
+        </div>
+
+        <!-- Livre 7 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/71TqXe0no6L.jpg">
+            <h2>Black Blossom T.1 - Loved You First</h2>
+            <p>Aimée Lou</p>
+        </div>
+
+        <!-- Livre 8 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/81g4ueago9L.jpg">
+            <h2>Black Blossom T.2 - Still The One</h2>
+            <p>Aimée Lou</p>
+        </div>
+
+        <!-- Livre 9 -->
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/I/7107WsdDYUL._AC_UF1000,1000_QL80_.jpg" alt="Sander - Les Dieux du Campus">
+            <h2>Sander - Les Dieux du Campus</h2>
+            <p>Phoenix B, Asher & F.V Estyer</p>
+        </div>
     </div>
 </body>
 </html>
