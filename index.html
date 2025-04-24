@@ -1,64 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Ma Bibliothèque</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ma bibliothèque</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f3f3f3;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
       padding: 20px;
     }
     h1 {
       text-align: center;
+      color: #333;
     }
-    .books {
-      display: flex;
-      flex-wrap: wrap;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
       gap: 20px;
-      justify-content: center;
+      margin-top: 30px;
     }
     .book {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: 180px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
       text-align: center;
       padding: 10px;
     }
     .book img {
-      max-width: 100%;
-      height: 250px;
+      width: 100%;
+      height: auto;
+      max-height: 250px;
       object-fit: cover;
-      border-radius: 5px;
     }
-    .book-title {
-      font-weight: bold;
-      margin-top: 10px;
+    .book h2 {
+      font-size: 1em;
+      margin: 10px 0 5px;
+      color: #444;
     }
-    .book-author {
-      color: gray;
+    .book p {
       font-size: 0.9em;
+      color: #777;
+      margin: 0;
     }
   </style>
 </head>
 <body>
-  <h1>Ma Bibliothèque 📚</h1>
-  <div class="books">
+  <h1>Ma bibliothèque 📚</h1>
+  <div class="grid">
+    <!-- Livre 1 -->
     <div class="book">
-      <img src="https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg" alt="Harry Potter">
-      <div class="book-title">Harry Potter à l'école des sorciers</div>
-      <div class="book-author">J.K. Rowling</div>
+      <img src="https://m.media-amazon.com/images/I/51qY6VZqKkL._SX342_SY445_.jpg" alt="Faux Départ">
+      <h2>Faux Départ</h2>
+      <p>Aimée Lou</p>
     </div>
+    <!-- Livre 2 -->
     <div class="book">
-      <img src="https://images-na.ssl-images-amazon.com/images/I/81aY5Uj+oVL.jpg" alt="Le Petit Prince">
-      <div class="book-title">Le Petit Prince</div>
-      <div class="book-author">Antoine de Saint-Exupéry</div>
+      <img src="https://m.media-amazon.com/images/I/51z6JX4pQBL._SX342_SY445_.jpg" alt="Hors Piste">
+      <h2>Hors Piste</h2>
+      <p>Aimée Lou</p>
     </div>
+    <!-- Livre 3 -->
     <div class="book">
-      <img src="https://m.media-amazon.com/images/I/71v9nXjX3hL.jpg" alt="1984">
-      <div class="book-title">1984</div>
-      <div class="book-author">George Orwell</div>
+      <img src="https://m.media-amazon.com/images/I/41rHqzYcV8L._SX342_SY445_.jpg" alt="Royal Bodyguard">
+      <h2>Royal Bodyguard</h2>
+      <p>Aimée Lou</p>
+    </div>
+    <!-- Livre 4 -->
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/51ZkXz3p1dL._SX342_SY445_.jpg" alt="Esprit D'Équipe">
+      <h2>Esprit D'Équipe</h2>
+      <p>Aimée Lou</p>
+    </div>
+    <!-- Livre 5 -->
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/51V6lR9qgEL._SX342_SY445_.jpg" alt="Black Blossom T.1 - Loved You First">
+      <h2>Black Blossom T.1 - Loved You First</h2>
+      <p>Aimée Lou</p>
+    </div>
+    <!-- Livre 6 -->
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/51V6lR9qgEL._SX342_SY445_.jpg" alt="Black Blossom T.2 - Still The One">
+      <h2>Black Blossom T.2 - Still The One</h2>
+      <p>Aimée Lou</p>
+    </div>
+    <!-- Livre 7 -->
+    <div class="book">
+      <img src="https://booknode.com/book_cover/03607767/falling_into_pieces.jpg" alt="Falling Into Pieces">
+      <h2>Falling Into Pieces</h2>
+      <p>Sheily Larash</p>
+    </div>
+    <!-- Livre 8 -->
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/41rHqzYcV8L._SX342_SY445_.jpg" alt="Malgré les Épines">
+      <h2>Malgré les Épines</h2>
+      <p>J.L Corolle</p>
+    </div>
+    <!-- Livre 9 -->
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/51ZkXz3p1dL._SX342_SY445_.jpg" alt="Sander - Les Dieux du Campus">
+      <h2>Sander - Les Dieux du Campus</h2>
+      <p>Phoenix B, Asher & F.V Estyer</p>
     </div>
   </div>
 </body>
