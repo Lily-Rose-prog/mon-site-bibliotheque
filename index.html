@@ -2,82 +2,64 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ma Bibliothèque</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f7f1;
-      color: #333;
-      margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      padding: 20px;
     }
-
-    header {
-      background-color: #5c4b51;
-      color: white;
-      padding: 1rem;
+    h1 {
       text-align: center;
     }
-
-    main {
-      padding: 2rem;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
-
-    .book-card {
-      background-color: white;
-      padding: 1rem;
+    .book {
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .book-card h2 {
-      margin-top: 0;
-      font-size: 1.2rem;
-      color: #5c4b51;
-    }
-
-    .book-card p {
-      margin: 0.5rem 0;
-    }
-
-    footer {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 180px;
       text-align: center;
-      padding: 1rem;
-      background-color: #eee;
-      margin-top: 2rem;
+      padding: 10px;
+    }
+    .book img {
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    .book-title {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .book-author {
+      color: gray;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ma Bibliothèque Personnelle</h1>
-    <p>Bienvenue dans mon monde de livres !</p>
-  </header>
-
-  <main>
-    <div class="book-card">
-      <h2>Le Nom du Vent</h2>
-      <p><strong>Auteur :</strong> Patrick Rothfuss</p>
-      <p><strong>Genre :</strong> Fantasy</p>
-      <p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
-      <p><strong>Avis :</strong> Magnifique écriture, très immersif.</p>
+  <h1>Ma Bibliothèque 📚</h1>
+  <div class="books">
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81YOuOGFCJL.jpg" alt="Harry Potter">
+      <div class="book-title">Harry Potter à l'école des sorciers</div>
+      <div class="book-author">J.K. Rowling</div>
     </div>
-
-    <div class="book-card">
-      <h2>1984</h2>
-      <p><strong>Auteur :</strong> George Orwell</p>
-      <p><strong>Genre :</strong> Dystopie</p>
-      <p><strong>Note :</strong> ⭐⭐⭐⭐⭐</p>
-      <p><strong>Avis :</strong> Incontournable, toujours d'actualité.</p>
+    <div class="book">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/81aY5Uj+oVL.jpg" alt="Le Petit Prince">
+      <div class="book-title">Le Petit Prince</div>
+      <div class="book-author">Antoine de Saint-Exupéry</div>
     </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Lily-Rose - Tous droits réservés</p>
-  </footer>
+    <div class="book">
+      <img src="https://m.media-amazon.com/images/I/71v9nXjX3hL.jpg" alt="1984">
+      <div class="book-title">1984</div>
+      <div class="book-author">George Orwell</div>
+    </div>
+  </div>
 </body>
 </html>
