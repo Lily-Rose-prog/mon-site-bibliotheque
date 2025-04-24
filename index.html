@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma Bibliothèque</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f7f1;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #5c4b51;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .book-card h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #5c4b51;
+    }
+
+    .book-card p {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ma Bibliothèque Personnelle</h1>
+    <p>Bienvenue dans mon monde de livres !</p>
+  </header>
+
+  <main>
+    <div class="book-card">
+      <h2>Le Nom du Vent</h2>
+      <p><strong>Auteur :</strong> Patrick Rothfuss</p>
+      <p><strong>Genre :</strong> Fantasy</p>
+      <p><strong>Note :</strong> ⭐⭐⭐⭐☆</p>
+      <p><strong>Avis :</strong> Magnifique écriture, très immersif.</p>
+    </div>
+
+    <div class="book-card">
+      <h2>1984</h2>
+      <p><strong>Auteur :</strong> George Orwell</p>
+      <p><strong>Genre :</strong> Dystopie</p>
+      <p><strong>Note :</strong> ⭐⭐⭐⭐⭐</p>
+      <p><strong>Avis :</strong> Incontournable, toujours d'actualité.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lily-Rose - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
